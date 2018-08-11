@@ -6,12 +6,10 @@
   </ul>
 
 
-<%= form_tag ({controller: 'products',
-  action: 'add'
-  method: 'POST'
-  }) do |f| %>
+  <%= form_tag ({controller: 'products',
+      action: 'add',
+      method: 'post'}) do %>
 
-  <input name= product>
-  <input type=submit value= 'add to cart'
-
+    <input name=product>
+    <input type=submit value='add to cart'>
   <% end %>
