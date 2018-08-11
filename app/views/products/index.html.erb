@@ -1,13 +1,17 @@
 <h3> Cart items </h3>
 <ul>
-  <% cart.each do |product| %> 
-    <%= product %> 
-    <% end %> 
+  <% cart.each do |product| %>
+    <%= product %>
+    <% end %>
   </ul> 
-    
 
-<%= form_for(@cart) do |f| %>
-  <%= f.text_field add %>
-  <%f.submit %>
 
-  <% end %> 
+<%= form_tag ({controller: 'products',
+  action: 'add'
+  method: 'POST'
+  }) do |f| %>
+  
+  <input name= product>
+  <input type=submit value= 'add to cart'
+
+  <% end %>
