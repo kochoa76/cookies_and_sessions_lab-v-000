@@ -1,6 +1,12 @@
 <h3> Cart items </h3>
+<ul>
+  <% cart.each do |product| %> 
+    <%= product %> 
+    <% end %> 
+  </ul> 
+    
 
-<%= form_for(@product) do |f| %>
+<%= form_for(@cart) do |f| %>
   <%= f.text_field add %>
   <%f.submit %>
 
