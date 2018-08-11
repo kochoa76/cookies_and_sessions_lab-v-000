@@ -3,14 +3,14 @@
   <% cart.each do |product| %>
     <%= product %>
     <% end %>
-  </ul> 
+  </ul>
 
 
 <%= form_tag ({controller: 'products',
   action: 'add'
   method: 'POST'
   }) do |f| %>
-  
+
   <input name= product>
   <input type=submit value= 'add to cart'
 
