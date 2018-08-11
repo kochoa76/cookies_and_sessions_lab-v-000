@@ -4,8 +4,8 @@ class PostsController < ApplicationController
   end
 
   def add
-    cart= session[:cart]
     cart << params[:product]
-    
-  end 
+    render :index
+
+  end
 end
